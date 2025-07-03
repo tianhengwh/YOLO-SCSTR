@@ -276,7 +276,7 @@ class SwinTransformerLayer(nn.Module):
         return x
 
 
-class CSTR(C3):
+class C3STR(C3):
     # C3 module with SwinTransformerBlock()
     def __init__(self, c1, c2, n=1, shortcut=True, g=1, e=0.5):
         super().__init__(c1, c2, n, shortcut, g, e)
